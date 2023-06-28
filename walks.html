@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Links to external pages-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./css/Style.css">
+		<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	</head>
+
+	<body>
+		<!--Image for header -->
+		<img class="headerImage" src="./images/Loops_Header.png">
+		<!--List for Navigation bar <a> set to to active class for current page -->
+		<ul class="topnav">
+			<li><a href="index.html">Home</a></li>
+			<li><a class="active" href="walks.html">Walks</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact Us</a></li
+			<!--Button to open search menu and dropdown-->
+			<li><a onclick="myFunction()">Search...</button></a></li>
+		</ul>
+		<!--Dropdown menu and search bar-->
+		<div class="dropdown">
+			<div id="myDropdown" class="dropdown-content">
+				<!--Search bar-->
+				<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+				<!--Dropdown-->
+				<a href="#hamilton-gardens">Hamilton Gardens</a>
+				<a href="#newstead-walkway">Newstead Walkway</a>
+				<a href="#lake-ngā-roto">Lake Ngā Roto</a>
+				<a href="#tuitua-arboetum">Taitua Arboretum</a>
+			</div>
+		</div>
+		<!--Scroll to top button -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<!--Parallax image-->
+		<div class="parallax" id="hamilton-gardens" style="background-image: url('images/IMG_1775.png')"></div>
+		<!--Div for creating row with two columns-->
+		<div class="walksRow">
+			<!--Left column-->
+			<div class="walksColumn">
+				<h2>Hamilton Gardens </h2>
+				<p>Throughout history, gardens have been a way of expressing the important philosophical ideas of their
+					time. In some respects the story of the gardens reflects the story of civilisation and attitudes to the
+					natural world. The collections of gardens at Hamilton Gardens explore the history, context and meaning
+					of gardens. Each tells a story and offers an insight into a different culture. Located in the middle of Hamilton, this is a popular tourist attraction the world over.</p>
+				<p>Walk Type: Loop</p>			
+				<p>Total Length: 2.1km</p>			
+				<p>Average Time to Walk: 75 minutes or 35 minutes at non-stop pace</p>			
+				<p>Accessibility: Easy but some gardens have stairs which makes it difficult to get around.</p>
+				<p>Location: Hungerford Crescent via State Highway 1C, Hamilton, 3216</p>
+				
+				<div class="sharebuttons">
+					<div class="sharetext">Share to  <span class="material-symbols-outlined">share</span></div>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=https://youtu.be/nlOXcQzbE2M&text=Check out Hamilton Gardens! @KirikiriroaLoop" target="_blank" class="sharefacebook">Facebook</a>
+					<a href="https://twitter.com/share?url=https://youtu.be/nlOXcQzbE2M&text=Check out Hamilton Gardens! @KirikiriroaLoop" target="_blank" class="sharetwitter">Twitter</a>
+					<a href="https://www.google.com/maps/@-37.8049131,175.3050831,1434m/data=!3m1!1e3"target="_blank"><img src="./images/locationicon.png" class="mapSpace"></a>
+				</div>
+			</div>
+			<!--Right column-->
+			<div class="walksColumn">
+				<!--Embedded youtube video-->
+				<iframe class="walksVideo" src="https://www.youtube.com/embed/nlOXcQzbE2M" title="Hamilton Gardens"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+		
+		</div>
+		<!--Parallax image-->
+		<div class="parallax" id="newstead-walkway" style="background-image: url('images/IMG_1775.png')"></div>
+		<!--Div for creating row with two columns-->
+		<div class="walksRow">
+			<!--Left column-->
+			<div class="walksColumn">
+				<h2>Newstead Walkway</h2>
+				<p>Newstead Walkway is an easy out and back trail just outside of Hamilton that is ideal for families with
+					children. Dogs are also allowed, if they are on a lead. The walk features forest, a stream and a creek,
+					wooden bridges, rural scenes and a large clearing surrounded by towering eucalyptus trees which is a
+					perfect picnic spot. The pathways, a mix of gravel, dirt, grass and boardwalks, are well established and
+					mostly protected from the elements.</p>
+				<p>Walk type: Out and back</p>
+				<p>Total length: 2.3km return </p>
+				<p>Average time to walk: 35 minutes</p>
+				<p>Accessibility: Easy (weather dependent)</p>
+				<p>Location: State Highway 26 between Hamilton Park Cemetery and Newstead Model School or 126 Vaile Road</p>
+				<div class="sharebuttons">
+					<div class="sharetext">Share to <span class="material-symbols-outlined">share</span></div>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=https://youtu.be/Nk7cPnYsCgU&text=Check out Newstead Walkway! @KirikiriroaLoop" target="_blank" class="sharefacebook">Facebook</a>
+					<a href="https://twitter.com/share?url=https://youtu.be/Nk7cPnYsCgU&text=Check out Newstead Walkway! @KirikiriroaLoop" target="_blank" class="sharetwitter">Twitter</a>
+					<a href="https://www.google.com/maps/@-37.7749404,175.3580897,2115m/data=!3m1!1e3"target="_blank"> <img src="./images/locationicon.png" class="mapSpace"></a>
+				</div>
+			</div>
+			<!--Right column-->
+			<div class="walksColumn">
+				<!--Embedded youtube video-->
+				<iframe class="walksVideo" src="https://www.youtube.com/embed/Nk7cPnYsCgU" title="Newstead Walkway"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+		</div>
+		<!--Parallax image-->
+		<div class="parallax" id="lake-ngā-roto" style="background-image: url('images/IMG_1775.png')"></div>
+		<!--Div for creating row with two columns-->
+		<div class="walksRow">
+			<!--Left column-->
+			<div class="walksColumn">
+				<h2>Lake Ngā Roto</h2>
+				<p>Ngā Roto is a significant cultural site of importance to iwi and a treasured local community asset just
+					north of Te Awamutu. The boardwalk at Lake Ngā Roto is open to walking, running and cycling activities.
+					Dogs are welcome on a lead. The boardwalk wraps around a natural wetland surrounding the lake and is
+					regularly used by the local rowing club, sailing club, duck hunters, walkers and is a popular tourist
+					attraction.</p>
+				<p>Walk Type: Loop</p>
+				<p>Total Length: 5.9km</p>
+				<p>Average Time to Walk: 1 hour</p>
+				<p>Accessibility: Very Easy</p>
+				<p>Location: 65 Bank Road, Te Awamutu 3883</p>
+				<div class="sharebuttons">
+					<div class="sharetext">Share to <span class="material-symbols-outlined">share</span></div>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=https://youtu.be/5ip2bwLGNcQ&text=Check out Lake Ngā Roto! @KirikiriroaLoop" target="_blank" class="sharefacebook">Facebook</a>
+					<a href="https://twitter.com/share?url=https://youtu.be/5ip2bwLGNcQ&text=Check out Lake Ngā Roto! @KirikiriroaLoop" target="_blank" class="sharetwitter">Twitter</a>
+					<a href="https://www.google.com/maps/@-37.9541563,175.2930113,3232m/data=!3m1!1e3" target="_blank"> <img src="./images/locationicon.png" class="mapSpace"></a>
+				</div>
+			</div>
+			<!--Right column-->
+			<div class="walksColumn">
+				<!--Embedded youtube video-->
+				<iframe class="walksVideo" src="https://www.youtube.com/embed/5ip2bwLGNcQ" title="Lake Ngā Roto"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+		</div>
+		<!--Parallax image-->
+		<div class="parallax" id="tuitua-arboetum" style="background-image: url('images/IMG_1775.png')"></div>
+		<!--Div for creating row with two columns-->
+		<div class="walksRow">
+			<!--Left column-->
+			<div class="walksColumn">
+				<h2>Taitua Arboretum</h2>
+				<p>Taitua Arboretum is home to an impressive selection of mature trees spread across 22 hectares. Featuring
+					lakes, woodland gardens, bird-life and ample picnic spots, all linked by a network of walking tracks. The
+					arboretum is perfect for a leisurely weekend stroll, family picnic, or a more active outing. Dogs are
+					welcome within the arboretum but must be kept on a lead at all times. The track is hilly with a range of
+					surfaces like dirt and gravel which may be difficult for less abled people to manage.</p>
+				<p>Walk Type: Loop</p>
+				<p>Total Length: 2.3km</p>
+				<p>Average Time to Walk: 40 minutes</p>
+				<p>Accessibility: Medium</p>
+				<p>Location: 55 Taitua Road, Temple View, Hamilton 3289</p>
+				<div class="sharebuttons">
+					<div class="sharetext">Share to <span class="material-symbols-outlined">share</span></div>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=https://youtu.be/r6YKIlp-WoA&text=Check out Taitua Arboretum! @KirikiriroaLoop" target="_blank" class="sharefacebook">Facebook</a>
+					<a href="https://twitter.com/share?url=https://youtu.be/r6YKIlp-WoA&text=Check out Taitua Arboretum! @KirikiriroaLoop" target="_blank" class="sharetwitter">Twitter</a>
+					<a href="https://www.google.com/maps/@-37.8070376,175.215409,1251m/data=!3m1!1e3" target="_blank"> <img src="./images/locationicon.png" class="mapSpace"></a>
+				</div>
+			</div>
+			<!--Right column-->
+			<div class="walksColumn">
+				<!--Embedded youtube video-->
+				<iframe class="walksVideo" src="https://www.youtube.com/embed/r6YKIlp-WoA" title="Taitua Arboretum"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+		</div>
+		<!--Parallax image-->
+		<div class="parallax" style="background-image: url('images/IMG_1775.png')"></div>
+		<!--Footer-->
+		<footer class="footerStyle">
+			<!--Div for creating row with three columns-->
+			<div class="footerRow">
+				<!--Logo on left-->
+				<div class="footerColumn">
+					<img class="footerLogo" src="./images/cropped Loops Logo.png" height="150px">
+				</div>
+				<!--Text in conter-->
+				<div class="footerColumn footerCopyright">
+					<h4>Copyright &#169; 2022 Kirikiriroa Loops. All rights reserved.</h4>
+				</div>
+				<!--Social media buttons on right-->
+				<div class="footerColumn footerIcons">
+					<a href="https://www.facebook.com/kirikiriroaloops" class="icon" target="_blank"><img src="./images/socials_facebook.png"></img></a>
+					<a href="https://www.youtube.com/channel/UCWvaeZNIXeLbk2_SSZshSOQ" class="icon" target="_blank"><img src="./images/socials_youtube.png"></img></a>
+					<a href="https://www.twitter.com/kirikiriroaloop" class="icon" target="_blank"><img src="./images/socials_twitter.png"></img></a>
+					<a href="https://www.instagram.com/kirikiriroa" class="icon" target="_blank"><img src="./images/socials_insta.png"></img></a>
+				</div>
+			</div>
+		</footer>
+		<script src="./JavaScript/main.js"></script>
+		<script src="./JavaScript/topdown.js"></script>
+	</body>
+</html>

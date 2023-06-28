@@ -1,0 +1,574 @@
+/*Import Fonts Roboto and Quicksand*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 19px;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	margin: 0;
+	background-color: #eeeeee;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	margin: 0;
+}
+
+h3 {
+	margin: 0;
+}
+
+/*This makes images stretch with page size*/
+.responsive {
+	max-width: 100%;
+	height: auto;
+}
+
+/*Parallax Images*/
+.parallax {
+	min-height: 150px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-color: #274e13;
+	border-width: 10px;
+}
+
+/*THIS MUST BE UNDER PARALLAX I HAVE NO IDEA WHY*/
+html {	
+	scroll-behavior: smooth;
+}
+
+/*Header Image*/
+.headerImage {
+	display: block;
+	width: 100%;
+	margin: auto;
+	height: auto
+}
+
+/*Navigation Bar*/
+.topnav {
+	overflow: hidden;
+	background-color: #008037;
+	/*bar is green by default*/
+}
+
+.topnav a {
+	float: left;
+}
+
+ul.topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.topnav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*Active and hovered pages are blue*/
+ul.topnav li a:hover {
+	background-color: #004aad;
+}
+
+ul.topnav li a.active {
+	background-color: #004aad;
+}
+
+
+
+/*Search bar and dropdown menu*/
+#myInput {
+	box-sizing: border-box;
+	background-image: url('searchicon.png');
+	/*This doesn't appear on the page. Could remove*/
+	background-position: 14px 12px;
+	background-repeat: no-repeat;
+	font-size: 16px;
+	padding: 14px 100% 12px 40px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {
+	outline: 3px solid #ddd;
+}
+
+/*dropdown menu*/
+.dropdown {
+	position: relative;
+	width: 100%;
+}
+
+/*size of sections*/
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f6f6f6;
+	overflow: auto;
+	border: 1px solid #ddd;
+	z-index: 1;
+	width: 100%;
+	height: 150px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+/*decoration for text*/
+.dropdown-content a {
+	color: black;
+	min-width: 100%;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	border: 1px solid #ddd;
+	margin-top: -1px;
+}
+
+.dropdown-content::-webkit-scrollbar {
+	display: none;
+}
+
+.dropdown a:hover {
+	background-color: #ddd;
+}
+
+.show {
+	display: block;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 100%;
+	position: relative;
+	margin: auto;
+}
+
+/*Size of the image and covers instead of stretch*/
+.slideshow-container img {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+}
+
+/* Hides the images by default */
+.mySlides {
+	display: none
+}
+
+/*Textbox inside slideshow*/
+.homeText {
+	position: absolute;
+	/*Uses absolute, top/left50% and transform to center inside the image */
+	background-color: white;
+	color: black;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 60%;
+	border-radius: 15px;
+	line-height: 1.6;
+}
+
+/* Fading animation on image change*/
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+/*Columns for Main Page*/
+.homeRow {
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+/*for mobile view*/
+.homeRow:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.homeColumn {
+	float: left;
+	width: 50%;
+	height: 100%;
+	padding: 3%;
+}
+
+.homeColumn p {
+	font-size: 19px;
+}
+
+/*dimensions for blog images*/
+.homeColumn img {
+	width: 100%;
+}
+
+/*ShareButtons*/
+.sharebuttons {
+
+	width: 100%;
+	display: inline-block;
+	color: #ffffff;
+	margin-top: 10px;
+}
+
+/*CSS for twitter and facebook*/
+.sharebuttons a {
+	text-decoration: none;
+	padding: 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+	color: white;
+}
+
+/*CSS for share to*/
+.sharetext {
+	display: inline-block;
+	background-color: #2a8036;
+	color: white;
+	padding: 10px;
+}
+
+.sharebuttons a:hover {
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+.sharetwitter {
+	background-color: #55acee;
+}
+
+.sharefacebook {
+	background-color: #3B5998;
+}
+
+/*CSS for map Button*/
+.mapSpace {
+	float: right;
+	width: 100px;
+	height: 100px;
+}
+
+/*share Icon*/
+.material-symbols-outlined {
+	font-size: 19px !important; /*Overrides external font-size on share icon with !important to make buttons same size*/
+	font-variation-settings:
+	'FILL' 1,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 20
+  }
+
+/*Columns for Walks Page*/
+.walksRow {
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+.walksRow:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.walksColumn {
+	float: left;
+	width: 50%;
+	height: 100%;
+	padding: 3%;
+}
+
+.walksColumn p {
+	font-size: 16px;
+}
+
+/*Dimensions for video player*/
+.walksVideo {
+	width: 100%;
+	height: 450px;
+}
+
+/*Columns for About Page*/
+.aboutRow:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.aboutColumn {
+	float: left;
+	width: 50%;
+
+}
+
+/*textbox at top of page*/
+.aboutText {
+	width: 70%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: #004aad;
+	color: white;
+	padding: 15px;
+	border-radius: 15px;
+}
+
+/*About us profile cards*/
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 400px;
+	max-height: 565px;
+	margin: auto;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	text-align: center;
+	font-family: arial;
+	color: white;
+	background-color: #004aad;
+	border-radius: 10px;
+}
+
+.card img {
+	height: 300px;
+	width: 300px;
+	margin-top: 20px;
+}
+
+.card p {
+	margin: 0;
+	padding: 15px;
+}
+
+/*Section at bottom of card with social links*/
+.card button {
+	border: none;
+	outline: 0;
+	color: white;
+	background-color: #333;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 25px;
+	padding: 0;
+	max-height: 70px;
+}
+
+.card button a {
+	color: white;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.aboutSocial {
+	padding: 20px 0;
+}
+
+.aboutSocial a {
+	padding: 10px;
+}
+
+.aboutSocial a:hover {
+	color: #008037;
+	/*change to green on hover*/
+}
+
+/*Columns for Contact Page*/
+.contactImage {
+	display: block;
+	height: 600px;
+	width: 450;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-top: 3%;
+	object-fit: cover;
+	/*Makes img not stretch in mobile view*/
+}
+
+.rowContact {
+	width: 80%;
+	margin: auto;
+}
+
+.rowContact:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*size of container for map and text*/
+.columnContact {
+	float: left;
+	width: 50%;
+	height: 500px;
+	padding: 3%;
+	line-height: 2;
+	text-align: center;
+}
+
+.contactText {
+	background-color: #004aad;
+	border-radius: 15px;
+	padding-bottom: 5%;
+	color: white;
+}
+
+/*Google map embedded*/
+.contactMap {
+	width: 100%;
+	height: 430px;
+	/*this is the same height as the text on the right*/
+}
+
+/*Footer. Sizing needs to be dealt with and buttons fixed*/
+.footerStyle {
+	text-align: center;
+	padding: 3px;
+	background-color: #333;
+	color: #fff;
+}
+
+/*company logo on left of footer*/
+.footerLogo {
+	height: 110px;
+	padding-top: 40px !important;
+}
+
+/*Social media icons on right of footer*/
+.footerIcons {
+	height: 80px;
+	padding-top: 60px !important;
+}
+
+.icon {
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	max-width: 150px;
+}
+
+.icon:hover {
+	opacity: 0.7;
+}
+
+/*Copyright text in middle*/
+.footerCopyright {
+	height: 10px;
+	padding-top: 30px !important;
+}
+
+/*spacing for footer content, goes to one column in mobile view*/
+.footerColumn {
+	float: left;
+	width: 33.33%;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 45px;
+	padding-top: 10px;
+}
+
+.footerRow:after {
+	content: "";
+	display: table;
+	clear: both;
+
+}
+
+/*Scroll to top button*/
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: #008037;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+#myBtn:hover {
+	background-color: #555;
+}
+
+/*Makes navigation bar vertical in mobile viewr*/
+@media screen and (max-width: 600px) {
+	ul.topnav, li.right, ul.topnav li {
+		float: none;
+	}
+}
+
+/*Makes slideshow text a seperate element from image in mobile view*/
+@media screen and (max-width: 600px) {
+	.homeText {
+		position: static;
+		transform: translate(0, 0);
+		width: 100%;
+	}
+}
+
+/*Makes content single file for mobile view */
+@media screen and (max-width: 600px) {
+	.homeColumn, .aboutColumn, .walksColumn, .aboutRow, .card, .footerStyle, .headerImage  {
+		width: 100%;
+	}
+}
+
+/*Makes content single file for mobile view and removes magin to fix overflow*/
+@media screen and (max-width: 600px) {
+	.homeRow, .walksRow, .rowContact {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+/*Makes content single column in mobile viewr*/
+@media screen and (max-width: 600px) {
+	.topnav a, .footerColumn, .columnContact, .contactImage {
+		float: none;
+		width: 100%;
+	}
+}
+
